@@ -1,0 +1,8 @@
+PySide6
+SQLAlchemy
+alembic
+reportlab
+pandas
+openpyxl
+Werkzeug
+pydantic

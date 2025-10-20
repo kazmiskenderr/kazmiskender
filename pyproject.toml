@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kazmiskender"
+version = "0.1.0"
+description = "Warehouse management desktop application"
+readme = "README.md"
+authors = [{ name = "Kazmiskender" }]
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6",
+    "SQLAlchemy",
+    "alembic",
+    "reportlab",
+    "pandas",
+    "openpyxl",
+    "Werkzeug",
+    "pydantic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pyinstaller",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
